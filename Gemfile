@@ -13,6 +13,9 @@ gem "stimulus-rails"
 gem "cssbundling-rails"
 gem "redis", "~> 4.0"
 
+gem "devise", "~> 4.8"
+gem "slim-rails", "~> 3.5"
+
 group :development, :test do
   gem "debug"
 end
