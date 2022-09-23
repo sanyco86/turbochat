@@ -6,5 +6,5 @@ class Message < ApplicationRecord
 
   validates :body, presence: true
 
-  scope :scoped, -> { order(:id) }
+  scope :sorted, -> { order(:id) }
 end
