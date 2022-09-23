@@ -15,6 +15,7 @@ gem "redis", "~> 4.0"
 
 gem "devise", "~> 4.8"
 gem "slim-rails", "~> 3.5"
+gem "draper", "~> 4.0"
 
 group :development, :test do
   gem "debug"

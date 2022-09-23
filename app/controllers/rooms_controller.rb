@@ -7,7 +7,7 @@ class RoomsController < ApplicationController
   def show
     @room = Room.find_by!(title: params[:title])
     @new_message = Message.new
-    @messages = @room.messages
+    @messages = MessageDecorator.decorate_collection(@room.messages.includes(:user))
   end
 
   def create
