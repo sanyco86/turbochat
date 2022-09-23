@@ -3,7 +3,7 @@ class MessagesController < ApplicationController
     @new_message = current_user.messages.build(strong_params)
 
     if @new_message.save
-      @new_message.broadcast_append_to @new_message.room, locals: { user: current_user }
+      @new_message.broadcast_append_to @new_message.room, locals: { user_id: current_user.id }
     end
   end
 
